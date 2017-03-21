@@ -4,7 +4,7 @@ RTSP Video Streaming Server
 It provides the streaming of several video files.
 Moreover, it can take in input a folder with images to create a video file which will be streamed.
 
-It is avalable on Python3. I don't know if it works with Python2 because I don't want use it.
+It is available on Python3. I don't know if it works with Python2 because I don't want use it.
 
 Requirements
 ============
