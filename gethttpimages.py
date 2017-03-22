@@ -42,6 +42,7 @@ class GetHandler(BaseHTTPRequestHandler):
 			infoFile = path + data['id_source'] + ".info"
 			if not os.path.exists(infoFile):
 				with open(infoFile, 'w') as info:
+					info.write('format:mp4\nfps:10')
 					info.close()
 				print("Info file created")
 	
