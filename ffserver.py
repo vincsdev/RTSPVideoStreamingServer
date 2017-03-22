@@ -51,8 +51,8 @@ class FFServerConf:
 			endIP      = beginIP+".255"
 
 			""" Video size """
-			W = 640
-			H = 480
+			W = 320
+			H = 240
 
 			for idx, f in enumerate(self.filesList):
 				c.write("<Feed feed-" + str(idx) + ".ffm> \n")

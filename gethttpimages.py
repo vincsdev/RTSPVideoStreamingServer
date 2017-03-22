@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 from http.server import *
 import json, os
 
@@ -18,8 +19,11 @@ class GetHandler(BaseHTTPRequestHandler):
 			#print(data)
 
 			path = "./medias/images/"
+			if not os.path.exists("./medias/"):
+				os.mkdir("./medias/")
+			if not os.path.exists(path):
+                                os.mkdir(path)
 			if not os.path.exists(path + data['id_source']):
-				print("not exists")
 				os.mkdir(path + data['id_source'])
 
 			for i in range(2, len(content)-1):
